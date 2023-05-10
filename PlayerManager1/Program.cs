@@ -129,6 +129,12 @@ namespace PlayerManager1 // >>> Change to PlayerManager2 for exercise 4 <<< //
             // /////////////////// //
             // COMPLETE ME PLEASE! //
             // /////////////////// //
+            foreach (Player p in playersToList)
+            {
+                Console.WriteLine("Name: " + p.Name);
+                Console.WriteLine("Score: " + p.Score);
+                Console.WriteLine("-");
+            }
         }
 
         /// <summary>
