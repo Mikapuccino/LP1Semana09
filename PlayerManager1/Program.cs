@@ -148,14 +148,14 @@ namespace PlayerManager1 // >>> Change to PlayerManager2 for exercise 4 <<< //
             Console.Write("Value to beat: ");
             int newValue = int.Parse(Console.ReadLine());
 
-            foreach (Player p in playerList)
+            List<Player> validPlayers = 
+            GetPlayersWithScoreGreaterThan(newValue);
+
+            foreach (Player p in validPlayers)
             {
-                if (p.Score > newValue)
-                {
-                    Console.WriteLine("Name: " + p.Name);
-                    Console.WriteLine("Score: " + p.Score);
-                    Console.WriteLine("-");
-                }
+                Console.WriteLine("Name: " + p.Name);
+                Console.WriteLine("Score: " + p.Score);
+                Console.WriteLine("-");
             }
         }
 
@@ -171,6 +171,17 @@ namespace PlayerManager1 // >>> Change to PlayerManager2 for exercise 4 <<< //
             // /////////////////// //
             // COMPLETE ME PLEASE! //
             // /////////////////// //
+            List<Player> validPlayers = new List<Player>();
+            
+            foreach (Player p in playerList)
+            {
+                if (p.Score > newValue)
+                {
+                    validPlayers.Add(p);
+                }
+
+            return validPlayers;
+            };
         }
     }
 }
