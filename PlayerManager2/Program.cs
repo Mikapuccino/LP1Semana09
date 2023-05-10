@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace PlayerManager1 // >>> Change to PlayerManager2 for exercise 4 <<< //
+namespace PlayerManager2 // >>> Change to PlayerManager2 for exercise 4 <<< //
 {
     /// <summary>
     /// The player listing program.
@@ -162,11 +162,11 @@ namespace PlayerManager1 // >>> Change to PlayerManager2 for exercise 4 <<< //
             {
                 if (p.Score > minScore)
                 {
-                    validPlayers.Add(p);
+                    yield return p;
                 }
             }
 
-            return validPlayers;
+            yield break;
         }
     }
 }
