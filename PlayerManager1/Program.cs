@@ -89,6 +89,11 @@ namespace PlayerManager1 // >>> Change to PlayerManager2 for exercise 4 <<< //
             // /////////////////// //
             // COMPLETE ME PLEASE! //
             // /////////////////// //
+            Console.WriteLine("1. Insert new player");
+            Console.WriteLine("2. List all players");
+            Console.WriteLine("3. List all players with a "
+            + "score higher than given value");
+            Console.WriteLine("4. Exit program");
         }
 
         /// <summary>
