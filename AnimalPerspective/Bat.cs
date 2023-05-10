@@ -7,6 +7,8 @@ namespace AnimalPerspective
 {
     public class Bat : Animal
     {
+        public int NumberOfNipples { get { return 2; } }
+        
         public override string Sound()
         {
             return "Squeak, squeak!";
