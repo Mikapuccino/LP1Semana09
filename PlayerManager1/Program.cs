@@ -86,9 +86,6 @@ namespace PlayerManager1 // >>> Change to PlayerManager2 for exercise 4 <<< //
         /// </summary>
         private void ShowMenu()
         {
-            // /////////////////// //
-            // COMPLETE ME PLEASE! //
-            // /////////////////// //
             Console.WriteLine("1. Insert new player");
             Console.WriteLine("2. List all players");
             Console.WriteLine("3. List all players with a "
@@ -101,9 +98,6 @@ namespace PlayerManager1 // >>> Change to PlayerManager2 for exercise 4 <<< //
         /// </summary>
         private void InsertPlayer()
         {
-            // /////////////////// //
-            // COMPLETE ME PLEASE! //
-            // /////////////////// //
             Console.Write("Name of player: ");
             string newName = Console.ReadLine();
             Console.Write("Score of player: ");
@@ -126,9 +120,6 @@ namespace PlayerManager1 // >>> Change to PlayerManager2 for exercise 4 <<< //
         /// </param>
         private static void ListPlayers(IEnumerable<Player> playersToList)
         {
-            // /////////////////// //
-            // COMPLETE ME PLEASE! //
-            // /////////////////// //
             foreach (Player p in playersToList)
             {
                 Console.WriteLine("Name: " + p.Name);
@@ -142,9 +133,6 @@ namespace PlayerManager1 // >>> Change to PlayerManager2 for exercise 4 <<< //
         /// </summary>
         private void ListPlayersWithScoreGreaterThan()
         {
-            // /////////////////// //
-            // COMPLETE ME PLEASE! //
-            // /////////////////// //
             Console.Write("Value to beat: ");
             int newValue = int.Parse(Console.ReadLine());
 
@@ -168,10 +156,6 @@ namespace PlayerManager1 // >>> Change to PlayerManager2 for exercise 4 <<< //
         /// </returns>
         private IEnumerable<Player> GetPlayersWithScoreGreaterThan(int minScore)
         {
-            // /////////////////// //
-            // COMPLETE ME PLEASE! //
-            // /////////////////// //
-
             List<Player> validPlayers = new List<Player>();
             
             foreach (Player p in playerList)
