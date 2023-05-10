@@ -104,6 +104,15 @@ namespace PlayerManager1 // >>> Change to PlayerManager2 for exercise 4 <<< //
             // /////////////////// //
             // COMPLETE ME PLEASE! //
             // /////////////////// //
+            Console.Write("Name of player: ");
+            string newName = Console.ReadLine();
+            Console.Write("Score of player: ");
+            int newScore = int.Parse(Console.ReadLine());
+
+            Player newPlayer = new Player("Best player ever", 100);
+            playerList.Add(newPlayer);
+
+            Console.WriteLine($"{newName} successfully added");
         }
 
         /// <summary>
