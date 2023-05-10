@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace AnimalPerspective
 {
-    public class Cat : Animal
+    public class Cat : Animal, IMammal
     {
         public int NumberOfNipples { get { return 6; } }
         
