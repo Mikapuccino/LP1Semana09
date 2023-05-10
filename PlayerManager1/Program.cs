@@ -109,7 +109,7 @@ namespace PlayerManager1 // >>> Change to PlayerManager2 for exercise 4 <<< //
             Console.Write("Score of player: ");
             int newScore = int.Parse(Console.ReadLine());
 
-            Player newPlayer = new Player("Best player ever", 100);
+            Player newPlayer = new Player(newName, newScore);
             playerList.Add(newPlayer);
 
             Console.WriteLine($"{newName} successfully added");
@@ -148,7 +148,7 @@ namespace PlayerManager1 // >>> Change to PlayerManager2 for exercise 4 <<< //
             Console.Write("Value to beat: ");
             int newValue = int.Parse(Console.ReadLine());
 
-            List<Player> validPlayers = 
+            IEnumerable<Player> validPlayers = 
             GetPlayersWithScoreGreaterThan(newValue);
 
             foreach (Player p in validPlayers)
@@ -171,17 +171,18 @@ namespace PlayerManager1 // >>> Change to PlayerManager2 for exercise 4 <<< //
             // /////////////////// //
             // COMPLETE ME PLEASE! //
             // /////////////////// //
+
             List<Player> validPlayers = new List<Player>();
             
             foreach (Player p in playerList)
             {
-                if (p.Score > newValue)
+                if (p.Score > minScore)
                 {
                     validPlayers.Add(p);
                 }
+            }
 
             return validPlayers;
-            };
         }
     }
 }

@@ -7,8 +7,8 @@ namespace PlayerManager1
 {
     public class Player
     {
-        string Name { get; }
-        int Score { get; set; }
+        public string Name { get; }
+        public int Score { get; set; }
 
         public Player(string name, int score)
         {
