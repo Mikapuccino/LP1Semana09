@@ -145,6 +145,18 @@ namespace PlayerManager1 // >>> Change to PlayerManager2 for exercise 4 <<< //
             // /////////////////// //
             // COMPLETE ME PLEASE! //
             // /////////////////// //
+            Console.Write("Value to beat: ");
+            int newValue = int.Parse(Console.ReadLine());
+
+            foreach (Player p in playerList)
+            {
+                if (p.Score > newValue)
+                {
+                    Console.WriteLine("Name: " + p.Name);
+                    Console.WriteLine("Score: " + p.Score);
+                    Console.WriteLine("-");
+                }
+            }
         }
 
         /// <summary>
